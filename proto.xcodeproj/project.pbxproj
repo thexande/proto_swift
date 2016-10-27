@@ -124,6 +124,7 @@
 		B078B4AA1DC1206500473B87 /* proto */ = {
 			isa = PBXGroup;
 			children = (
+				B078B4D91DC182D500473B87 /* Libraries */,
 				B078B4AB1DC1206500473B87 /* AppDelegate.swift */,
 				B078B4AD1DC1206500473B87 /* ViewController.swift */,
 				B078B4AF1DC1206500473B87 /* Main.storyboard */,
@@ -150,6 +151,13 @@
 				B078B4CD1DC1206600473B87 /* Info.plist */,
 			);
 			path = protoUITests;
+			sourceTree = "<group>";
+		};
+		B078B4D91DC182D500473B87 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 		E00A1424882486ED5111AF74 /* Pods */ = {
