@@ -23,6 +23,31 @@
 		B078B4E31DC1840B00473B87 /* MKRingProgressGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B4E21DC1840B00473B87 /* MKRingProgressGroupView.swift */; };
 		B078B4E51DC1844000473B87 /* MKRingProgressGroupResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B4E41DC1844000473B87 /* MKRingProgressGroupResultsView.swift */; };
 		B078B4E71DC1845900473B87 /* MKRingProgressGroupVotingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B4E61DC1845900473B87 /* MKRingProgressGroupVotingView.swift */; };
+		B078B4EA1DC185E400473B87 /* CreatePollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B4E91DC185E400473B87 /* CreatePollViewController.swift */; };
+		B078B4F01DC1896300473B87 /* PollPictureCreateOptionOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B4EF1DC1896300473B87 /* PollPictureCreateOptionOneViewController.swift */; };
+		B078B4F21DC1897F00473B87 /* PollPictureCreateOptionTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B4F11DC1897F00473B87 /* PollPictureCreateOptionTwoViewController.swift */; };
+		B078B5411DC18B1400473B87 /* CameraView.strings in Resources */ = {isa = PBXBuildFile; fileRef = B078B5261DC18B1400473B87 /* CameraView.strings */; };
+		B078B5421DC18B1400473B87 /* CameraViewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B078B5271DC18B1400473B87 /* CameraViewAssets.xcassets */; };
+		B078B5431DC18B1400473B87 /* CameraGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B5291DC18B1400473B87 /* CameraGlobals.swift */; };
+		B078B5441DC18B1400473B87 /* CameraShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B52A1DC18B1400473B87 /* CameraShot.swift */; };
+		B078B5451DC18B1400473B87 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B52B1DC18B1400473B87 /* ImageFetcher.swift */; };
+		B078B5461DC18B1400473B87 /* PhotoLibraryAuthorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B52C1DC18B1400473B87 /* PhotoLibraryAuthorizer.swift */; };
+		B078B5471DC18B1400473B87 /* SingleImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B52D1DC18B1400473B87 /* SingleImageFetcher.swift */; };
+		B078B5481DC18B1400473B87 /* SingleImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B52E1DC18B1400473B87 /* SingleImageSaver.swift */; };
+		B078B5491DC18B1400473B87 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B52F1DC18B1400473B87 /* UIButtonExtensions.swift */; };
+		B078B54A1DC18B1400473B87 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B5301DC18B1400473B87 /* UIViewExtensions.swift */; };
+		B078B54B1DC18B1400473B87 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B5311DC18B1400473B87 /* Utilities.swift */; };
+		B078B54C1DC18B1400473B87 /* VolumeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B5321DC18B1400473B87 /* VolumeControl.swift */; };
+		B078B54D1DC18B1400473B87 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B5341DC18B1400473B87 /* CameraViewController.swift */; };
+		B078B54E1DC18B1400473B87 /* CameraViewControllerConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B5351DC18B1400473B87 /* CameraViewControllerConstraint.swift */; };
+		B078B54F1DC18B1400473B87 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B5361DC18B1400473B87 /* ConfirmViewController.swift */; };
+		B078B5501DC18B1400473B87 /* ConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B078B5371DC18B1400473B87 /* ConfirmViewController.xib */; };
+		B078B5511DC18B1400473B87 /* PhotoLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B5381DC18B1400473B87 /* PhotoLibraryViewController.swift */; };
+		B078B5521DC18B1400473B87 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B53A1DC18B1400473B87 /* CameraView.swift */; };
+		B078B5531DC18B1400473B87 /* CropOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B53B1DC18B1400473B87 /* CropOverlay.swift */; };
+		B078B5541DC18B1400473B87 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B53C1DC18B1400473B87 /* ImageCell.swift */; };
+		B078B5551DC18B1400473B87 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B53D1DC18B1400473B87 /* PermissionsView.swift */; };
+		B078B5561DC18B1400473B87 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B078B5401DC18B1400473B87 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +93,32 @@
 		B078B4E21DC1840B00473B87 /* MKRingProgressGroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKRingProgressGroupView.swift; path = Libraries/MKRingProgressGroup/MKRingProgressGroupView.swift; sourceTree = "<group>"; };
 		B078B4E41DC1844000473B87 /* MKRingProgressGroupResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKRingProgressGroupResultsView.swift; path = Libraries/MKRingProgressGroup/MKRingProgressGroupResultsView.swift; sourceTree = "<group>"; };
 		B078B4E61DC1845900473B87 /* MKRingProgressGroupVotingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKRingProgressGroupVotingView.swift; path = Libraries/MKRingProgressGroup/MKRingProgressGroupVotingView.swift; sourceTree = "<group>"; };
+		B078B4E91DC185E400473B87 /* CreatePollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreatePollViewController.swift; path = Controllers/CreatePollViewController.swift; sourceTree = "<group>"; };
+		B078B4EF1DC1896300473B87 /* PollPictureCreateOptionOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollPictureCreateOptionOneViewController.swift; path = Controllers/PollPictureCreate/PollPictureCreateOptionOneViewController.swift; sourceTree = "<group>"; };
+		B078B4F11DC1897F00473B87 /* PollPictureCreateOptionTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PollPictureCreateOptionTwoViewController.swift; path = Controllers/PollPictureCreate/PollPictureCreateOptionTwoViewController.swift; sourceTree = "<group>"; };
+		B078B5261DC18B1400473B87 /* CameraView.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = CameraView.strings; sourceTree = "<group>"; };
+		B078B5271DC18B1400473B87 /* CameraViewAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CameraViewAssets.xcassets; sourceTree = "<group>"; };
+		B078B5291DC18B1400473B87 /* CameraGlobals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraGlobals.swift; sourceTree = "<group>"; };
+		B078B52A1DC18B1400473B87 /* CameraShot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraShot.swift; sourceTree = "<group>"; };
+		B078B52B1DC18B1400473B87 /* ImageFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
+		B078B52C1DC18B1400473B87 /* PhotoLibraryAuthorizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibraryAuthorizer.swift; sourceTree = "<group>"; };
+		B078B52D1DC18B1400473B87 /* SingleImageFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleImageFetcher.swift; sourceTree = "<group>"; };
+		B078B52E1DC18B1400473B87 /* SingleImageSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleImageSaver.swift; sourceTree = "<group>"; };
+		B078B52F1DC18B1400473B87 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
+		B078B5301DC18B1400473B87 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		B078B5311DC18B1400473B87 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		B078B5321DC18B1400473B87 /* VolumeControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeControl.swift; sourceTree = "<group>"; };
+		B078B5341DC18B1400473B87 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		B078B5351DC18B1400473B87 /* CameraViewControllerConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewControllerConstraint.swift; sourceTree = "<group>"; };
+		B078B5361DC18B1400473B87 /* ConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
+		B078B5371DC18B1400473B87 /* ConfirmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmViewController.xib; sourceTree = "<group>"; };
+		B078B5381DC18B1400473B87 /* PhotoLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibraryViewController.swift; sourceTree = "<group>"; };
+		B078B53A1DC18B1400473B87 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		B078B53B1DC18B1400473B87 /* CropOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropOverlay.swift; sourceTree = "<group>"; };
+		B078B53C1DC18B1400473B87 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		B078B53D1DC18B1400473B87 /* PermissionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
+		B078B53F1DC18B1400473B87 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		B078B5401DC18B1400473B87 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFB77ADF2EDB8E861BBCC549 /* Pods-proto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-proto/Pods-proto.debug.xcconfig"; sourceTree = "<group>"; };
 		E33295A5788B01958158A05B /* Pods_protoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_protoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFEA23834FF03A987B9C739 /* Pods-proto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proto.release.xcconfig"; path = "Pods/Target Support Files/Pods-proto/Pods-proto.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +187,9 @@
 		B078B4AA1DC1206500473B87 /* proto */ = {
 			isa = PBXGroup;
 			children = (
+				B078B4EC1DC186FB00473B87 /* Models */,
+				B078B4EB1DC186E400473B87 /* Views */,
+				B078B4E81DC185AA00473B87 /* Controllers */,
 				B078B4D91DC182D500473B87 /* Libraries */,
 				B078B4AB1DC1206500473B87 /* AppDelegate.swift */,
 				B078B4AD1DC1206500473B87 /* ViewController.swift */,
@@ -168,6 +222,8 @@
 		B078B4D91DC182D500473B87 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				B078B5251DC18B1400473B87 /* ALCameraViewController */,
+				B078B53E1DC18B1400473B87 /* CameraViewController */,
 				B078B4DF1DC183AD00473B87 /* MKRingProgressGroup */,
 				B078B4DA1DC1832800473B87 /* MKRingProgressView */,
 			);
@@ -192,6 +248,107 @@
 				B078B4E61DC1845900473B87 /* MKRingProgressGroupVotingView.swift */,
 			);
 			name = MKRingProgressGroup;
+			sourceTree = "<group>";
+		};
+		B078B4E81DC185AA00473B87 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B078B4EE1DC1891400473B87 /* PollPictureCreate */,
+				B078B4E91DC185E400473B87 /* CreatePollViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B078B4EB1DC186E400473B87 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B078B4ED1DC1876000473B87 /* CustomClasses */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B078B4EC1DC186FB00473B87 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B078B4ED1DC1876000473B87 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CustomClasses;
+			sourceTree = "<group>";
+		};
+		B078B4EE1DC1891400473B87 /* PollPictureCreate */ = {
+			isa = PBXGroup;
+			children = (
+				B078B4EF1DC1896300473B87 /* PollPictureCreateOptionOneViewController.swift */,
+				B078B4F11DC1897F00473B87 /* PollPictureCreateOptionTwoViewController.swift */,
+			);
+			name = PollPictureCreate;
+			sourceTree = "<group>";
+		};
+		B078B5251DC18B1400473B87 /* ALCameraViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B078B5261DC18B1400473B87 /* CameraView.strings */,
+				B078B5271DC18B1400473B87 /* CameraViewAssets.xcassets */,
+				B078B5281DC18B1400473B87 /* Utilities */,
+				B078B5331DC18B1400473B87 /* ViewController */,
+				B078B5391DC18B1400473B87 /* Views */,
+			);
+			path = ALCameraViewController;
+			sourceTree = "<group>";
+		};
+		B078B5281DC18B1400473B87 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B078B5291DC18B1400473B87 /* CameraGlobals.swift */,
+				B078B52A1DC18B1400473B87 /* CameraShot.swift */,
+				B078B52B1DC18B1400473B87 /* ImageFetcher.swift */,
+				B078B52C1DC18B1400473B87 /* PhotoLibraryAuthorizer.swift */,
+				B078B52D1DC18B1400473B87 /* SingleImageFetcher.swift */,
+				B078B52E1DC18B1400473B87 /* SingleImageSaver.swift */,
+				B078B52F1DC18B1400473B87 /* UIButtonExtensions.swift */,
+				B078B5301DC18B1400473B87 /* UIViewExtensions.swift */,
+				B078B5311DC18B1400473B87 /* Utilities.swift */,
+				B078B5321DC18B1400473B87 /* VolumeControl.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B078B5331DC18B1400473B87 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B078B5341DC18B1400473B87 /* CameraViewController.swift */,
+				B078B5351DC18B1400473B87 /* CameraViewControllerConstraint.swift */,
+				B078B5361DC18B1400473B87 /* ConfirmViewController.swift */,
+				B078B5371DC18B1400473B87 /* ConfirmViewController.xib */,
+				B078B5381DC18B1400473B87 /* PhotoLibraryViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B078B5391DC18B1400473B87 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B078B53A1DC18B1400473B87 /* CameraView.swift */,
+				B078B53B1DC18B1400473B87 /* CropOverlay.swift */,
+				B078B53C1DC18B1400473B87 /* ImageCell.swift */,
+				B078B53D1DC18B1400473B87 /* PermissionsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B078B53E1DC18B1400473B87 /* CameraViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B078B53F1DC18B1400473B87 /* CameraViewController.h */,
+				B078B5401DC18B1400473B87 /* Info.plist */,
+			);
+			path = CameraViewController;
 			sourceTree = "<group>";
 		};
 		E00A1424882486ED5111AF74 /* Pods */ = {
@@ -325,9 +482,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B078B5421DC18B1400473B87 /* CameraViewAssets.xcassets in Resources */,
 				B078B4B61DC1206500473B87 /* LaunchScreen.storyboard in Resources */,
 				B078B4B31DC1206500473B87 /* Assets.xcassets in Resources */,
+				B078B5411DC18B1400473B87 /* CameraView.strings in Resources */,
 				B078B4B11DC1206500473B87 /* Main.storyboard in Resources */,
+				B078B5501DC18B1400473B87 /* ConfirmViewController.xib in Resources */,
+				B078B5561DC18B1400473B87 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,14 +636,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B078B5481DC18B1400473B87 /* SingleImageSaver.swift in Sources */,
+				B078B5461DC18B1400473B87 /* PhotoLibraryAuthorizer.swift in Sources */,
 				B078B4AE1DC1206500473B87 /* ViewController.swift in Sources */,
+				B078B54F1DC18B1400473B87 /* ConfirmViewController.swift in Sources */,
+				B078B4F21DC1897F00473B87 /* PollPictureCreateOptionTwoViewController.swift in Sources */,
+				B078B5541DC18B1400473B87 /* ImageCell.swift in Sources */,
 				B078B4E51DC1844000473B87 /* MKRingProgressGroupResultsView.swift in Sources */,
 				B078B4E71DC1845900473B87 /* MKRingProgressGroupVotingView.swift in Sources */,
+				B078B5511DC18B1400473B87 /* PhotoLibraryViewController.swift in Sources */,
 				B078B4DE1DC1838700473B87 /* MKGradientGenerator.swift in Sources */,
+				B078B4F01DC1896300473B87 /* PollPictureCreateOptionOneViewController.swift in Sources */,
 				B078B4DC1DC1836300473B87 /* MKRingProgressView.swift in Sources */,
 				B078B4AC1DC1206500473B87 /* AppDelegate.swift in Sources */,
+				B078B54A1DC18B1400473B87 /* UIViewExtensions.swift in Sources */,
+				B078B54D1DC18B1400473B87 /* CameraViewController.swift in Sources */,
+				B078B5471DC18B1400473B87 /* SingleImageFetcher.swift in Sources */,
+				B078B5531DC18B1400473B87 /* CropOverlay.swift in Sources */,
+				B078B5521DC18B1400473B87 /* CameraView.swift in Sources */,
+				B078B4EA1DC185E400473B87 /* CreatePollViewController.swift in Sources */,
 				B078B4E11DC183E700473B87 /* MKRingProgressGroupButton.swift in Sources */,
+				B078B54C1DC18B1400473B87 /* VolumeControl.swift in Sources */,
+				B078B5441DC18B1400473B87 /* CameraShot.swift in Sources */,
+				B078B5451DC18B1400473B87 /* ImageFetcher.swift in Sources */,
+				B078B5551DC18B1400473B87 /* PermissionsView.swift in Sources */,
+				B078B5491DC18B1400473B87 /* UIButtonExtensions.swift in Sources */,
 				B078B4E31DC1840B00473B87 /* MKRingProgressGroupView.swift in Sources */,
+				B078B54B1DC18B1400473B87 /* Utilities.swift in Sources */,
+				B078B54E1DC18B1400473B87 /* CameraViewControllerConstraint.swift in Sources */,
+				B078B5431DC18B1400473B87 /* CameraGlobals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
