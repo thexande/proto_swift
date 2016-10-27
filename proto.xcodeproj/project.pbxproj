@@ -187,10 +187,10 @@
 		B078B4AA1DC1206500473B87 /* proto */ = {
 			isa = PBXGroup;
 			children = (
+				B078B4D91DC182D500473B87 /* Libraries */,
 				B078B4EC1DC186FB00473B87 /* Models */,
 				B078B4EB1DC186E400473B87 /* Views */,
 				B078B4E81DC185AA00473B87 /* Controllers */,
-				B078B4D91DC182D500473B87 /* Libraries */,
 				B078B4AB1DC1206500473B87 /* AppDelegate.swift */,
 				B078B4AD1DC1206500473B87 /* ViewController.swift */,
 				B078B4AF1DC1206500473B87 /* Main.storyboard */,

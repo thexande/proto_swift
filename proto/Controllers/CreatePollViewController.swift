@@ -12,10 +12,16 @@ class CreatePollViewController: UIViewController {
     var croppingEnabled: Bool = true
     var libraryEnabled: Bool = true
     
+    @IBOutlet weak var optionOneImageView: UIImageView!
+    @IBOutlet weak var optionTwoImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // crop circles
+        circleCrop(imageView: optionOneImageView)
+        circleCrop(imageView: optionTwoImageView)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,16 +29,36 @@ class CreatePollViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    @IBAction func openOptionOneCamera(_ sender: AnyObject) {
+    func circleCrop(imageView: UIImageView) {
+        imageView.layer.borderWidth = 1
+        imageView.layer.masksToBounds = false
+        imageView.layer.cornerRadius = imageView.frame.height/2
+        imageView.clipsToBounds = true
+    }
+    
+    @IBAction func addOptionOneImage(_ sender: AnyObject) {
         let cameraViewController = CameraViewController(croppingEnabled: croppingEnabled, allowsLibraryAccess: libraryEnabled) { [weak self] image, asset in
             //self?.imageView.image = image
-            print(image)
-            //self?.dismiss(animated: true, completion: nil)
+            self?.optionOneImageView.image = image
+            self?.dismiss(animated: true, completion: nil)
         }
         
         present(cameraViewController, animated: true, completion: nil)
     }
+   
+   
+    @IBAction func addOptionTwoImage(_ sender: AnyObject) {
+        let cameraViewController = CameraViewController(croppingEnabled: croppingEnabled, allowsLibraryAccess: libraryEnabled) { [weak self] image, asset in
+            //self?.imageView.image = image
+            self?.optionTwoImageView.image = image
+            self?.dismiss(animated: true, completion: nil)
+        }
+        
+        present(cameraViewController, animated: true, completion: nil)
+    }
+
+
+
     /*
     // MARK: - Navigation
 
