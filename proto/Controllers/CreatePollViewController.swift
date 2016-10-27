@@ -9,7 +9,7 @@
 import UIKit
 
 class CreatePollViewController: UIViewController {
-    var croppingEnabled: Bool = false
+    var croppingEnabled: Bool = true
     var libraryEnabled: Bool = true
     
     override func viewDidLoad() {
