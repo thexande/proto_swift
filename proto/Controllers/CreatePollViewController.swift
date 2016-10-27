@@ -13,11 +13,11 @@ class CreatePollViewController: UIViewController {
     var libraryEnabled: Bool = true
     
 
+    @IBOutlet weak var pollFormatSegment: UISegmentedControl!
     @IBOutlet weak var optionOneImageView: UIImageView!
     @IBOutlet weak var optionTwoImageView: UIImageView!
     
     
-    @IBOutlet weak var pollFormatControl: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,41 +32,66 @@ class CreatePollViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    // utility functions
     func circleCrop(imageView: UIImageView) {
         imageView.layer.borderWidth = 1
         imageView.layer.masksToBounds = false
         imageView.layer.cornerRadius = imageView.frame.height/2
         imageView.clipsToBounds = true
     }
-    func showPhotoCameraView() {
-        
+    
+    func currentSegmentState() -> String {
+        if(pollFormatSegment.selectedSegmentIndex == 0) {
+            return "photo"
+        }
+        else if(pollFormatSegment.selectedSegmentIndex == 1) {
+            return "video"
+        }
+        else if(pollFormatSegment.selectedSegmentIndex == 2) {
+            return "voice"
+        } else {
+            return "none"
+        }
     }
     
-    @IBAction func addOptionOneImage(_ sender: AnyObject) {
-        let cameraViewController = CameraViewController(croppingEnabled: croppingEnabled, allowsLibraryAccess: libraryEnabled) { [weak self] image, asset in
-            //self?.imageView.image = image
-            self?.optionOneImageView.image = image
-            self?.dismiss(animated: true, completion: nil)
-        }
-        present(cameraViewController, animated: true, completion: nil)
-    }
-   
-   
-    @IBAction func addOptionTwoImage(_ sender: AnyObject) {
-        let cameraViewController = CameraViewController(croppingEnabled: croppingEnabled, allowsLibraryAccess: libraryEnabled) { [weak self] image, asset in
-            //self?.imageView.image = image
-            self?.optionTwoImageView.image = image
-            self?.dismiss(animated: true, completion: nil)
-        }
+    @IBAction func addOptionOne(_ sender: AnyObject) {
         
-        present(cameraViewController, animated: true, completion: nil)
+        if(currentSegmentState() == "photo"){
+            let cameraViewController = CameraViewController(croppingEnabled: croppingEnabled, allowsLibraryAccess: libraryEnabled) { [weak self] image, asset in
+                //self?.imageView.image = image
+                self?.optionOneImageView.image = image
+                self?.dismiss(animated: true, completion: nil)
+            }
+            present(cameraViewController, animated: true, completion: nil)
+        }
+//        else if(currentSegmentState() == "video") {
+//            
+//        }
+//        else if(currentSegmentState() == "voice" {
+//            
+//        }
+    }
+   
+   
+    @IBAction func addOptionTwo(_ sender: AnyObject) {
+        if(currentSegmentState() == "photo"){
+            let cameraViewController = CameraViewController(croppingEnabled: croppingEnabled, allowsLibraryAccess: libraryEnabled) { [weak self] image, asset in
+                //self?.imageView.image = image
+                self?.optionTwoImageView.image = image
+                self?.dismiss(animated: true, completion: nil)
+            }
+            present(cameraViewController, animated: true, completion: nil)
+        }
+//        else if(currentSegmentState() == "video") {
+//            
+//        }
+//        else if(currentSegmentState() == "voice" {
+//            
+//        }
     }
 
-
-   
     @IBAction func pollFormatChange(_ sender: AnyObject) {
-        
+
     }
 
     /*

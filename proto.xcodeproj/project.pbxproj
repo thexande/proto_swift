@@ -48,6 +48,13 @@
 		B078B5541DC18B1400473B87 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B53C1DC18B1400473B87 /* ImageCell.swift */; };
 		B078B5551DC18B1400473B87 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B53D1DC18B1400473B87 /* PermissionsView.swift */; };
 		B078B5561DC18B1400473B87 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B078B5401DC18B1400473B87 /* Info.plist */; };
+		B078B5611DC1AC4C00473B87 /* NextLevel+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B5591DC1AC4C00473B87 /* NextLevel+Additions.swift */; };
+		B078B5621DC1AC4D00473B87 /* NextLevel+AVFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B55A1DC1AC4C00473B87 /* NextLevel+AVFoundation.swift */; };
+		B078B5631DC1AC4D00473B87 /* NextLevel+Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B55B1DC1AC4C00473B87 /* NextLevel+Metadata.swift */; };
+		B078B5641DC1AC4D00473B87 /* NextLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B55D1DC1AC4C00473B87 /* NextLevel.swift */; };
+		B078B5651DC1AC4D00473B87 /* NextLevelClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B55E1DC1AC4C00473B87 /* NextLevelClip.swift */; };
+		B078B5661DC1AC4D00473B87 /* NextLevelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B55F1DC1AC4C00473B87 /* NextLevelConfiguration.swift */; };
+		B078B5671DC1AC4D00473B87 /* NextLevelSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B5601DC1AC4C00473B87 /* NextLevelSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +126,14 @@
 		B078B53D1DC18B1400473B87 /* PermissionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
 		B078B53F1DC18B1400473B87 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
 		B078B5401DC18B1400473B87 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B078B5591DC1AC4C00473B87 /* NextLevel+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NextLevel+Additions.swift"; sourceTree = "<group>"; };
+		B078B55A1DC1AC4C00473B87 /* NextLevel+AVFoundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NextLevel+AVFoundation.swift"; sourceTree = "<group>"; };
+		B078B55B1DC1AC4C00473B87 /* NextLevel+Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NextLevel+Metadata.swift"; sourceTree = "<group>"; };
+		B078B55C1DC1AC4C00473B87 /* NextLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextLevel.h; sourceTree = "<group>"; };
+		B078B55D1DC1AC4C00473B87 /* NextLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextLevel.swift; sourceTree = "<group>"; };
+		B078B55E1DC1AC4C00473B87 /* NextLevelClip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextLevelClip.swift; sourceTree = "<group>"; };
+		B078B55F1DC1AC4C00473B87 /* NextLevelConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextLevelConfiguration.swift; sourceTree = "<group>"; };
+		B078B5601DC1AC4C00473B87 /* NextLevelSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextLevelSession.swift; sourceTree = "<group>"; };
 		BFB77ADF2EDB8E861BBCC549 /* Pods-proto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-proto/Pods-proto.debug.xcconfig"; sourceTree = "<group>"; };
 		E33295A5788B01958158A05B /* Pods_protoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_protoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFEA23834FF03A987B9C739 /* Pods-proto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proto.release.xcconfig"; path = "Pods/Target Support Files/Pods-proto/Pods-proto.release.xcconfig"; sourceTree = "<group>"; };
@@ -223,6 +238,7 @@
 		B078B4D91DC182D500473B87 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				B078B5581DC1AC4C00473B87 /* NextLevel */,
 				B078B5251DC18B1400473B87 /* ALCameraViewController */,
 				B078B53E1DC18B1400473B87 /* CameraViewController */,
 				B078B4DF1DC183AD00473B87 /* MKRingProgressGroup */,
@@ -357,6 +373,22 @@
 			children = (
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		B078B5581DC1AC4C00473B87 /* NextLevel */ = {
+			isa = PBXGroup;
+			children = (
+				B078B5591DC1AC4C00473B87 /* NextLevel+Additions.swift */,
+				B078B55A1DC1AC4C00473B87 /* NextLevel+AVFoundation.swift */,
+				B078B55B1DC1AC4C00473B87 /* NextLevel+Metadata.swift */,
+				B078B55C1DC1AC4C00473B87 /* NextLevel.h */,
+				B078B55D1DC1AC4C00473B87 /* NextLevel.swift */,
+				B078B55E1DC1AC4C00473B87 /* NextLevelClip.swift */,
+				B078B55F1DC1AC4C00473B87 /* NextLevelConfiguration.swift */,
+				B078B5601DC1AC4C00473B87 /* NextLevelSession.swift */,
+			);
+			name = NextLevel;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		E00A1424882486ED5111AF74 /* Pods */ = {
@@ -647,6 +679,7 @@
 				B078B5481DC18B1400473B87 /* SingleImageSaver.swift in Sources */,
 				B078B5461DC18B1400473B87 /* PhotoLibraryAuthorizer.swift in Sources */,
 				B078B4AE1DC1206500473B87 /* ViewController.swift in Sources */,
+				B078B5651DC1AC4D00473B87 /* NextLevelClip.swift in Sources */,
 				B078B54F1DC18B1400473B87 /* ConfirmViewController.swift in Sources */,
 				B078B4F21DC1897F00473B87 /* PollPictureCreateOptionTwoViewController.swift in Sources */,
 				B078B5541DC18B1400473B87 /* ImageCell.swift in Sources */,
@@ -657,7 +690,9 @@
 				B078B4F01DC1896300473B87 /* PollPictureCreateOptionOneViewController.swift in Sources */,
 				B078B4DC1DC1836300473B87 /* MKRingProgressView.swift in Sources */,
 				B078B4AC1DC1206500473B87 /* AppDelegate.swift in Sources */,
+				B078B5641DC1AC4D00473B87 /* NextLevel.swift in Sources */,
 				B078B54A1DC18B1400473B87 /* UIViewExtensions.swift in Sources */,
+				B078B5671DC1AC4D00473B87 /* NextLevelSession.swift in Sources */,
 				B078B54D1DC18B1400473B87 /* CameraViewController.swift in Sources */,
 				B078B5471DC18B1400473B87 /* SingleImageFetcher.swift in Sources */,
 				B078B5531DC18B1400473B87 /* CropOverlay.swift in Sources */,
@@ -666,13 +701,17 @@
 				B078B4E11DC183E700473B87 /* MKRingProgressGroupButton.swift in Sources */,
 				B078B54C1DC18B1400473B87 /* VolumeControl.swift in Sources */,
 				B078B5441DC18B1400473B87 /* CameraShot.swift in Sources */,
+				B078B5631DC1AC4D00473B87 /* NextLevel+Metadata.swift in Sources */,
 				B078B5451DC18B1400473B87 /* ImageFetcher.swift in Sources */,
 				B078B5551DC18B1400473B87 /* PermissionsView.swift in Sources */,
+				B078B5661DC1AC4D00473B87 /* NextLevelConfiguration.swift in Sources */,
 				B078B5491DC18B1400473B87 /* UIButtonExtensions.swift in Sources */,
 				B078B4E31DC1840B00473B87 /* MKRingProgressGroupView.swift in Sources */,
 				B078B54B1DC18B1400473B87 /* Utilities.swift in Sources */,
+				B078B5611DC1AC4C00473B87 /* NextLevel+Additions.swift in Sources */,
 				B078B54E1DC18B1400473B87 /* CameraViewControllerConstraint.swift in Sources */,
 				B078B5431DC18B1400473B87 /* CameraGlobals.swift in Sources */,
+				B078B5621DC1AC4D00473B87 /* NextLevel+AVFoundation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
