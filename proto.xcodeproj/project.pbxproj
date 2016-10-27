@@ -17,6 +17,12 @@
 		B078B4B61DC1206500473B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B078B4B41DC1206500473B87 /* LaunchScreen.storyboard */; };
 		B078B4C11DC1206600473B87 /* protoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B4C01DC1206600473B87 /* protoTests.swift */; };
 		B078B4CC1DC1206600473B87 /* protoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B4CB1DC1206600473B87 /* protoUITests.swift */; };
+		B078B4DC1DC1836300473B87 /* MKRingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B4DB1DC1836300473B87 /* MKRingProgressView.swift */; };
+		B078B4DE1DC1838700473B87 /* MKGradientGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B4DD1DC1838700473B87 /* MKGradientGenerator.swift */; };
+		B078B4E11DC183E700473B87 /* MKRingProgressGroupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B4E01DC183E700473B87 /* MKRingProgressGroupButton.swift */; };
+		B078B4E31DC1840B00473B87 /* MKRingProgressGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B4E21DC1840B00473B87 /* MKRingProgressGroupView.swift */; };
+		B078B4E51DC1844000473B87 /* MKRingProgressGroupResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B4E41DC1844000473B87 /* MKRingProgressGroupResultsView.swift */; };
+		B078B4E71DC1845900473B87 /* MKRingProgressGroupVotingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B4E61DC1845900473B87 /* MKRingProgressGroupVotingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,12 @@
 		B078B4C71DC1206600473B87 /* protoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = protoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B078B4CB1DC1206600473B87 /* protoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protoUITests.swift; sourceTree = "<group>"; };
 		B078B4CD1DC1206600473B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B078B4DB1DC1836300473B87 /* MKRingProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKRingProgressView.swift; path = Libraries/MKRingProgressView/MKRingProgressView.swift; sourceTree = "<group>"; };
+		B078B4DD1DC1838700473B87 /* MKGradientGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKGradientGenerator.swift; path = Libraries/MKRingProgressView/MKGradientGenerator.swift; sourceTree = "<group>"; };
+		B078B4E01DC183E700473B87 /* MKRingProgressGroupButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKRingProgressGroupButton.swift; path = Libraries/MKRingProgressGroup/MKRingProgressGroupButton.swift; sourceTree = "<group>"; };
+		B078B4E21DC1840B00473B87 /* MKRingProgressGroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKRingProgressGroupView.swift; path = Libraries/MKRingProgressGroup/MKRingProgressGroupView.swift; sourceTree = "<group>"; };
+		B078B4E41DC1844000473B87 /* MKRingProgressGroupResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKRingProgressGroupResultsView.swift; path = Libraries/MKRingProgressGroup/MKRingProgressGroupResultsView.swift; sourceTree = "<group>"; };
+		B078B4E61DC1845900473B87 /* MKRingProgressGroupVotingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MKRingProgressGroupVotingView.swift; path = Libraries/MKRingProgressGroup/MKRingProgressGroupVotingView.swift; sourceTree = "<group>"; };
 		BFB77ADF2EDB8E861BBCC549 /* Pods-proto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-proto/Pods-proto.debug.xcconfig"; sourceTree = "<group>"; };
 		E33295A5788B01958158A05B /* Pods_protoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_protoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFEA23834FF03A987B9C739 /* Pods-proto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proto.release.xcconfig"; path = "Pods/Target Support Files/Pods-proto/Pods-proto.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,8 +168,30 @@
 		B078B4D91DC182D500473B87 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				B078B4DF1DC183AD00473B87 /* MKRingProgressGroup */,
+				B078B4DA1DC1832800473B87 /* MKRingProgressView */,
 			);
 			name = Libraries;
+			sourceTree = "<group>";
+		};
+		B078B4DA1DC1832800473B87 /* MKRingProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				B078B4DB1DC1836300473B87 /* MKRingProgressView.swift */,
+				B078B4DD1DC1838700473B87 /* MKGradientGenerator.swift */,
+			);
+			name = MKRingProgressView;
+			sourceTree = "<group>";
+		};
+		B078B4DF1DC183AD00473B87 /* MKRingProgressGroup */ = {
+			isa = PBXGroup;
+			children = (
+				B078B4E01DC183E700473B87 /* MKRingProgressGroupButton.swift */,
+				B078B4E21DC1840B00473B87 /* MKRingProgressGroupView.swift */,
+				B078B4E41DC1844000473B87 /* MKRingProgressGroupResultsView.swift */,
+				B078B4E61DC1845900473B87 /* MKRingProgressGroupVotingView.swift */,
+			);
+			name = MKRingProgressGroup;
 			sourceTree = "<group>";
 		};
 		E00A1424882486ED5111AF74 /* Pods */ = {
@@ -442,7 +476,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B078B4AE1DC1206500473B87 /* ViewController.swift in Sources */,
+				B078B4E51DC1844000473B87 /* MKRingProgressGroupResultsView.swift in Sources */,
+				B078B4E71DC1845900473B87 /* MKRingProgressGroupVotingView.swift in Sources */,
+				B078B4DE1DC1838700473B87 /* MKGradientGenerator.swift in Sources */,
+				B078B4DC1DC1836300473B87 /* MKRingProgressView.swift in Sources */,
 				B078B4AC1DC1206500473B87 /* AppDelegate.swift in Sources */,
+				B078B4E11DC183E700473B87 /* MKRingProgressGroupButton.swift in Sources */,
+				B078B4E31DC1840B00473B87 /* MKRingProgressGroupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
