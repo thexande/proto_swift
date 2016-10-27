@@ -18,6 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="td5-09-hpH">
+                                <frame key="frameInset" minX="80" minY="79" width="214" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o4J-My-M7C">
                                 <frame key="frameInset" minX="80" minY="345" width="214" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -38,22 +42,30 @@
                                     <action selector="addOptionTwoImage:" destination="LYv-Rt-BG0" eventType="touchUpInside" id="U2G-aZ-Hlo"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="td5-09-hpH">
-                                <frame key="frameInset" minX="80" minY="79" width="214" height="210"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6zu-o5-Mac">
+                                <frame key="frameInset" minX="71" minY="20" width="232" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <segments>
+                                    <segment title="Photo"/>
+                                    <segment title="Video"/>
+                                    <segment title="Voice"/>
+                                </segments>
+                                <connections>
+                                    <action selector="pollFormatChange:" destination="LYv-Rt-BG0" eventType="valueChanged" id="E9H-hi-qK2"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="new poll" id="c4Z-6d-9p4"/>
                     <connections>
-                        <outlet property="optionOneImageView" destination="td5-09-hpH" id="GmG-1Q-BbL"/>
-                        <outlet property="optionTwoImageView" destination="o4J-My-M7C" id="uDg-b1-Umd"/>
+                        <outlet property="optionOneImageView" destination="td5-09-hpH" id="kLX-jH-225"/>
+                        <outlet property="optionTwoImageView" destination="o4J-My-M7C" id="A67-Xh-nXj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nR7-pW-zn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3163.7681159420295" y="579.61956521739137"/>
+            <point key="canvasLocation" x="3162.4000000000001" y="578.86056971514245"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NAE-6z-JW9">

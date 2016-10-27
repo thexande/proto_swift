@@ -187,6 +187,7 @@
 		B078B4AA1DC1206500473B87 /* proto */ = {
 			isa = PBXGroup;
 			children = (
+				B078B5571DC198B600473B87 /* Helpers */,
 				B078B4D91DC182D500473B87 /* Libraries */,
 				B078B4EC1DC186FB00473B87 /* Models */,
 				B078B4EB1DC186E400473B87 /* Views */,
@@ -349,6 +350,13 @@
 				B078B5401DC18B1400473B87 /* Info.plist */,
 			);
 			path = CameraViewController;
+			sourceTree = "<group>";
+		};
+		B078B5571DC198B600473B87 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		E00A1424882486ED5111AF74 /* Pods */ = {

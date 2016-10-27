@@ -12,8 +12,12 @@ class CreatePollViewController: UIViewController {
     var croppingEnabled: Bool = true
     var libraryEnabled: Bool = true
     
+
     @IBOutlet weak var optionOneImageView: UIImageView!
     @IBOutlet weak var optionTwoImageView: UIImageView!
+    
+    
+    @IBOutlet weak var pollFormatControl: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +39,9 @@ class CreatePollViewController: UIViewController {
         imageView.layer.cornerRadius = imageView.frame.height/2
         imageView.clipsToBounds = true
     }
+    func showPhotoCameraView() {
+        
+    }
     
     @IBAction func addOptionOneImage(_ sender: AnyObject) {
         let cameraViewController = CameraViewController(croppingEnabled: croppingEnabled, allowsLibraryAccess: libraryEnabled) { [weak self] image, asset in
@@ -42,7 +49,6 @@ class CreatePollViewController: UIViewController {
             self?.optionOneImageView.image = image
             self?.dismiss(animated: true, completion: nil)
         }
-        
         present(cameraViewController, animated: true, completion: nil)
     }
    
@@ -58,6 +64,10 @@ class CreatePollViewController: UIViewController {
     }
 
 
+   
+    @IBAction func pollFormatChange(_ sender: AnyObject) {
+        
+    }
 
     /*
     // MARK: - Navigation
