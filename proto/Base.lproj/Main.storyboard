@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="7Uh-Mi-KjL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BGh-ye-y3G">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="td5-09-hpH">
@@ -77,7 +77,7 @@
                         <viewControllerLayoutGuide type="bottom" id="65N-ia-bm0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SDg-bh-tZd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7nR-Lk-6cw" userLabel="votingView">
@@ -217,7 +217,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Hv9-xs-8Ls"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XA8-ET-CO9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -236,7 +236,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ecW-HQ-1hI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LTW-HS-Jp5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhq-iv-rU9">
