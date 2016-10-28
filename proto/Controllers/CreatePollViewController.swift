@@ -64,9 +64,9 @@ class CreatePollViewController: UIViewController {
             }
             present(cameraViewController, animated: true, completion: nil)
         }
-//        else if(currentSegmentState() == "video") {
-//            
-//        }
+        else if(currentSegmentState() == "video") {
+            self.performSegue(withIdentifier: "showVideo", sender: self)
+        }
 //        else if(currentSegmentState() == "voice" {
 //            
 //        }

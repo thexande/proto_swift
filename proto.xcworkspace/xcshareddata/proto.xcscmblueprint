@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "154D4F8D08B07B1BE239D8619ECAF80C00C26D22",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "211C9F5DAF79F03163BEE80A507F419A0EB06EEC" : 9223372036854775807,
+    "154D4F8D08B07B1BE239D8619ECAF80C00C26D22" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D70679CB-1658-41D3-9101-98205C2DEDD4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "211C9F5DAF79F03163BEE80A507F419A0EB06EEC" : "proto\/proto\/NextLevel\/",
+    "154D4F8D08B07B1BE239D8619ECAF80C00C26D22" : "proto\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "proto",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "proto.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/thexande\/proto_swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "154D4F8D08B07B1BE239D8619ECAF80C00C26D22"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NextLevel\/NextLevel.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "211C9F5DAF79F03163BEE80A507F419A0EB06EEC"
+    }
+  ]
+}
