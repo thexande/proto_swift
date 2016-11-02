@@ -39,6 +39,9 @@ class CreatePollViewController: UIViewController {
         imageView.layer.cornerRadius = imageView.frame.height/2
         imageView.clipsToBounds = true
     }
+    func sendValue(value: String) {
+        print("in main view controller", value)
+    }
     
     func currentSegmentState() -> String {
         if(pollFormatSegment.selectedSegmentIndex == 0) {
@@ -65,7 +68,9 @@ class CreatePollViewController: UIViewController {
             present(cameraViewController, animated: true, completion: nil)
         }
         else if(currentSegmentState() == "video") {
-            self.present(VideoCameraViewController(), animated: true, completion: nil)
+            let modalVC = VideoCameraViewController()
+            //modalVC.delegate = self
+            self.present(modalVC, animated: true, completion: nil)
         }
 //        else if(currentSegmetState() == "voice" {
 //            
