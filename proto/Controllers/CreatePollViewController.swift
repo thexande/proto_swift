@@ -7,24 +7,27 @@
 //
 
 import UIKit
+import Player
 
-class CreatePollViewController: UIViewController, VideoCameraModalViewControllerDelegate {
+class CreatePollViewController: UIViewController, VideoCameraModalViewControllerDelegate, PlayerDelegate {
     var croppingEnabled: Bool = true
     var libraryEnabled: Bool = true
-    
+    private var player: Player!
 
     @IBOutlet weak var pollFormatSegment: UISegmentedControl!
     @IBOutlet weak var optionOneImageView: UIImageView!
     @IBOutlet weak var optionTwoImageView: UIImageView!
-    
+    @IBOutlet weak var optionOneVideoView: UIView!
+    @IBOutlet var mainView: UIView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // crop circles
-        circleCrop(imageView: optionOneImageView)
-        circleCrop(imageView: optionTwoImageView)
+        ImageHelper.circleCrop(imageView: optionOneImageView)
+        ImageHelper.circleCrop(imageView: optionTwoImageView)
+        ViewHelper.circleCrop(view: optionOneVideoView)
         
     }
 
@@ -33,16 +36,72 @@ class CreatePollViewController: UIViewController, VideoCameraModalViewController
         // Dispose of any resources that can be recreated.
     }
     
-    // utility functions
-    func circleCrop(imageView: UIImageView) {
-        imageView.layer.borderWidth = 1
-        imageView.layer.masksToBounds = false
-        imageView.layer.cornerRadius = imageView.frame.height/2
-        imageView.clipsToBounds = true
+
+    internal func sendValue(value: URL) {
+        mainView.bringSubview(toFront: optionOneVideoView)
+        self.playVideo(videoURL: value)
+        print("in main view controller", value)
     }
     
-    internal func sendValue(value: URL) {
-        print("in main view controller", value)
+    func configureVideoPlayer() {
+        self.view.autoresizingMask = ([UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight])
+        self.player = Player()
+        self.player.delegate = self
+        self.player.view.frame = self.view.bounds
+        self.addChildViewController(self.player)
+        self.view.addSubview(self.player.view)
+        self.player.didMove(toParentViewController: self)
+        self.player.playbackLoops = false
+        let tapGestureRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTapGestureRecognizer(_:)))
+        tapGestureRecognizer.numberOfTapsRequired = 1
+        self.player.view.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    func playVideo(videoURL: URL) {
+        print("now playing video", videoURL)
+        //self.player.setUrl(videoURL)
+        //self.player.playFromBeginning()
+    }
+    
+    // MARK: UIGestureRecognizer
+    
+    func handleTapGestureRecognizer(_ gestureRecognizer: UITapGestureRecognizer) {
+        switch (self.player.playbackState.rawValue) {
+        case PlaybackState.stopped.rawValue:
+            self.player.playFromBeginning()
+        case PlaybackState.paused.rawValue:
+            self.player.playFromCurrentTime()
+        case PlaybackState.playing.rawValue:
+            self.player.pause()
+        case PlaybackState.failed.rawValue:
+            self.player.pause()
+        default:
+            self.player.pause()
+        }
+    }
+    
+    // MARK: PlayerDelegate
+    
+    func playerReady(_ player: Player) {
+    }
+    
+    func playerPlaybackStateDidChange(_ player: Player) {
+    }
+    
+    func playerBufferingStateDidChange(_ player: Player) {
+    }
+    
+    func playerPlaybackWillStartFromBeginning(_ player: Player) {
+    }
+    
+    func playerPlaybackDidEnd(_ player: Player) {
+    }
+    
+    func playerCurrentTimeDidChange(_ player: Player) {
+    }
+    
+    func playerWillComeThroughLoop(_ player: Player) {
+        
     }
     
     func currentSegmentState() -> String {

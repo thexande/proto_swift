@@ -11,6 +11,8 @@
 		671308BDC904AEFD8683E1BD /* Pods_protoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E33295A5788B01958158A05B /* Pods_protoUITests.framework */; };
 		6AE052C2B1BB3053885E8A20 /* Pods_proto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7CC4EA767C9798430C1AC02 /* Pods_proto.framework */; };
 		B0204C131DC945C3009703B2 /* ModalViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0204C121DC945C3009703B2 /* ModalViewControllerDelegate.swift */; };
+		B0204C151DCADB09009703B2 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0204C141DCADB09009703B2 /* ImageHelper.swift */; };
+		B0204C171DCADB9C009703B2 /* ViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0204C161DCADB9C009703B2 /* ViewHelper.swift */; };
 		B078B4AC1DC1206500473B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B4AB1DC1206500473B87 /* AppDelegate.swift */; };
 		B078B4AE1DC1206500473B87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B4AD1DC1206500473B87 /* ViewController.swift */; };
 		B078B4B11DC1206500473B87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B078B4AF1DC1206500473B87 /* Main.storyboard */; };
@@ -48,14 +50,6 @@
 		B078B5531DC18B1400473B87 /* CropOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B53B1DC18B1400473B87 /* CropOverlay.swift */; };
 		B078B5541DC18B1400473B87 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B53C1DC18B1400473B87 /* ImageCell.swift */; };
 		B078B5551DC18B1400473B87 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B53D1DC18B1400473B87 /* PermissionsView.swift */; };
-		B0833D991DC2F1E100BD9803 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B0833D791DC2F1E100BD9803 /* .gitignore */; };
-		B0833D9A1DC2F1E100BD9803 /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = B0833D7A1DC2F1E100BD9803 /* .swift-version */; };
-		B0833D9B1DC2F1E100BD9803 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = B0833D7B1DC2F1E100BD9803 /* .travis.yml */; };
-		B0833D9C1DC2F1E100BD9803 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B0833D7C1DC2F1E100BD9803 /* LICENSE */; };
-		B0833D9D1DC2F1E100BD9803 /* NextLevel.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B0833D7D1DC2F1E100BD9803 /* NextLevel.podspec */; };
-		B0833D9E1DC2F1E100BD9803 /* NextLevel.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = B0833D7E1DC2F1E100BD9803 /* NextLevel.xcworkspace */; };
-		B0833D9F1DC2F1E100BD9803 /* NextLevel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0833D7F1DC2F1E100BD9803 /* NextLevel@2x.png */; };
-		B0833DA01DC2F1E100BD9803 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0833D801DC2F1E100BD9803 /* Package.swift */; };
 		B0833DA11DC2F1E100BD9803 /* NLAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0833D831DC2F1E100BD9803 /* NLAppDelegate.swift */; };
 		B0833DA41DC2F1E100BD9803 /* VideoCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0833D871DC2F1E100BD9803 /* VideoCameraViewController.swift */; };
 		B0833DA61DC2F1E100BD9803 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0833D891DC2F1E100BD9803 /* Images.xcassets */; };
@@ -94,6 +88,8 @@
 		83D1BDB3A6BE216D0FCAFA67 /* Pods-protoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-protoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-protoUITests/Pods-protoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A7CC4EA767C9798430C1AC02 /* Pods_proto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_proto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0204C121DC945C3009703B2 /* ModalViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModalViewControllerDelegate.swift; path = Protocols/ModalViewControllerDelegate.swift; sourceTree = "<group>"; };
+		B0204C141DCADB09009703B2 /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageHelper.swift; path = Helpers/ImageHelper.swift; sourceTree = "<group>"; };
+		B0204C161DCADB9C009703B2 /* ViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewHelper.swift; path = Helpers/ViewHelper.swift; sourceTree = "<group>"; };
 		B078B4A81DC1206500473B87 /* proto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B078B4AB1DC1206500473B87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B078B4AD1DC1206500473B87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,14 +133,6 @@
 		B078B53B1DC18B1400473B87 /* CropOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropOverlay.swift; sourceTree = "<group>"; };
 		B078B53C1DC18B1400473B87 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		B078B53D1DC18B1400473B87 /* PermissionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
-		B0833D791DC2F1E100BD9803 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		B0833D7A1DC2F1E100BD9803 /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
-		B0833D7B1DC2F1E100BD9803 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
-		B0833D7C1DC2F1E100BD9803 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		B0833D7D1DC2F1E100BD9803 /* NextLevel.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NextLevel.podspec; sourceTree = "<group>"; };
-		B0833D7E1DC2F1E100BD9803 /* NextLevel.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = NextLevel.xcworkspace; sourceTree = "<group>"; };
-		B0833D7F1DC2F1E100BD9803 /* NextLevel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NextLevel@2x.png"; sourceTree = "<group>"; };
-		B0833D801DC2F1E100BD9803 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		B0833D831DC2F1E100BD9803 /* NLAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NLAppDelegate.swift; sourceTree = "<group>"; };
 		B0833D861DC2F1E100BD9803 /* Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
 		B0833D871DC2F1E100BD9803 /* VideoCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCameraViewController.swift; sourceTree = "<group>"; };
@@ -398,6 +386,8 @@
 		B078B5571DC198B600473B87 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				B0204C141DCADB09009703B2 /* ImageHelper.swift */,
+				B0204C161DCADB9C009703B2 /* ViewHelper.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -419,14 +409,6 @@
 		B0833D781DC2F1E100BD9803 /* NextLevel */ = {
 			isa = PBXGroup;
 			children = (
-				B0833D791DC2F1E100BD9803 /* .gitignore */,
-				B0833D7A1DC2F1E100BD9803 /* .swift-version */,
-				B0833D7B1DC2F1E100BD9803 /* .travis.yml */,
-				B0833D7C1DC2F1E100BD9803 /* LICENSE */,
-				B0833D7D1DC2F1E100BD9803 /* NextLevel.podspec */,
-				B0833D7E1DC2F1E100BD9803 /* NextLevel.xcworkspace */,
-				B0833D7F1DC2F1E100BD9803 /* NextLevel@2x.png */,
-				B0833D801DC2F1E100BD9803 /* Package.swift */,
 				B0833D811DC2F1E100BD9803 /* Project */,
 				B0833D901DC2F1E100BD9803 /* Sources */,
 			);
@@ -602,21 +584,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0833D9B1DC2F1E100BD9803 /* .travis.yml in Resources */,
-				B0833D991DC2F1E100BD9803 /* .gitignore in Resources */,
 				B078B5421DC18B1400473B87 /* CameraViewAssets.xcassets in Resources */,
 				B078B4B61DC1206500473B87 /* LaunchScreen.storyboard in Resources */,
-				B0833D9F1DC2F1E100BD9803 /* NextLevel@2x.png in Resources */,
-				B0833D9D1DC2F1E100BD9803 /* NextLevel.podspec in Resources */,
 				B078B4B31DC1206500473B87 /* Assets.xcassets in Resources */,
 				B0833DA71DC2F1E100BD9803 /* Info.plist in Resources */,
 				B0833DA61DC2F1E100BD9803 /* Images.xcassets in Resources */,
-				B0833D9C1DC2F1E100BD9803 /* LICENSE in Resources */,
-				B0833D9A1DC2F1E100BD9803 /* .swift-version in Resources */,
 				B078B5411DC18B1400473B87 /* CameraView.strings in Resources */,
 				B078B4B11DC1206500473B87 /* Main.storyboard in Resources */,
 				B078B5501DC18B1400473B87 /* ConfirmViewController.xib in Resources */,
-				B0833D9E1DC2F1E100BD9803 /* NextLevel.xcworkspace in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -787,6 +762,7 @@
 				B078B5471DC18B1400473B87 /* SingleImageFetcher.swift in Sources */,
 				B0833DAB1DC2F1E100BD9803 /* NextLevel+AVFoundation.swift in Sources */,
 				B0833DAF1DC2F1E100BD9803 /* NextLevelConfiguration.swift in Sources */,
+				B0204C171DCADB9C009703B2 /* ViewHelper.swift in Sources */,
 				B078B5531DC18B1400473B87 /* CropOverlay.swift in Sources */,
 				B078B5521DC18B1400473B87 /* CameraView.swift in Sources */,
 				B0204C131DC945C3009703B2 /* ModalViewControllerDelegate.swift in Sources */,
@@ -795,7 +771,7 @@
 				B078B54C1DC18B1400473B87 /* VolumeControl.swift in Sources */,
 				B078B5441DC18B1400473B87 /* CameraShot.swift in Sources */,
 				B0833DAD1DC2F1E100BD9803 /* NextLevel.swift in Sources */,
-				B0833DA01DC2F1E100BD9803 /* Package.swift in Sources */,
+				B0204C151DCADB09009703B2 /* ImageHelper.swift in Sources */,
 				B078B5451DC18B1400473B87 /* ImageFetcher.swift in Sources */,
 				B078B5551DC18B1400473B87 /* PermissionsView.swift in Sources */,
 				B078B5491DC18B1400473B87 /* UIButtonExtensions.swift in Sources */,
