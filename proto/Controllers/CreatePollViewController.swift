@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CreatePollViewController: UIViewController {
+class CreatePollViewController: UIViewController, VideoCameraModalViewControllerDelegate {
     var croppingEnabled: Bool = true
     var libraryEnabled: Bool = true
     
@@ -32,6 +32,7 @@ class CreatePollViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     // utility functions
     func circleCrop(imageView: UIImageView) {
         imageView.layer.borderWidth = 1
@@ -39,7 +40,8 @@ class CreatePollViewController: UIViewController {
         imageView.layer.cornerRadius = imageView.frame.height/2
         imageView.clipsToBounds = true
     }
-    func sendValue(value: String) {
+    
+    internal func sendValue(value: URL) {
         print("in main view controller", value)
     }
     
@@ -69,7 +71,7 @@ class CreatePollViewController: UIViewController {
         }
         else if(currentSegmentState() == "video") {
             let modalVC = VideoCameraViewController()
-            //modalVC.delegate = self
+            modalVC.delegate = self
             self.present(modalVC, animated: true, completion: nil)
         }
 //        else if(currentSegmetState() == "voice" {

@@ -6,8 +6,3 @@
 //  Copyright © 2016 Alexander Murphy. All rights reserved.
 //
 import Foundation
-
-protocol ModalViewControllerDelegate
-{
-    func sendValue(value : URL)
-}
