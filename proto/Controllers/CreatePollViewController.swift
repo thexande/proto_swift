@@ -23,6 +23,7 @@ class CreatePollViewController: UIViewController, VideoCameraModalViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.configureVideoPlayer()
 
         // crop circles
         ImageHelper.circleCrop(imageView: optionOneImageView)
@@ -39,8 +40,8 @@ class CreatePollViewController: UIViewController, VideoCameraModalViewController
 
     internal func sendValue(value: URL) {
         mainView.bringSubview(toFront: optionOneVideoView)
-        self.playVideo(videoURL: value)
         print("in main view controller", value)
+        self.playVideo(videoURL: value)
     }
     
     func configureVideoPlayer() {
@@ -59,8 +60,8 @@ class CreatePollViewController: UIViewController, VideoCameraModalViewController
     
     func playVideo(videoURL: URL) {
         print("now playing video", videoURL)
-        //self.player.setUrl(videoURL)
-        //self.player.playFromBeginning()
+        self.player.setUrl(videoURL)
+        self.player.playFromBeginning()
     }
     
     // MARK: UIGestureRecognizer
