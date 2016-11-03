@@ -84,8 +84,8 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/NextLevel/NextLevel.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Player/Player.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/NextLevel/NextLevel.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Player/Player.framework"
 fi
