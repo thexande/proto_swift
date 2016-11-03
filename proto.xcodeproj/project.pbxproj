@@ -13,6 +13,7 @@
 		B0204C131DC945C3009703B2 /* ModalViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0204C121DC945C3009703B2 /* ModalViewControllerDelegate.swift */; };
 		B0204C151DCADB09009703B2 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0204C141DCADB09009703B2 /* ImageHelper.swift */; };
 		B0204C171DCADB9C009703B2 /* ViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0204C161DCADB9C009703B2 /* ViewHelper.swift */; };
+		B0204C191DCC03C0009703B2 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0204C181DCC03C0009703B2 /* VideoHelper.swift */; };
 		B078B4AC1DC1206500473B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B4AB1DC1206500473B87 /* AppDelegate.swift */; };
 		B078B4AE1DC1206500473B87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B4AD1DC1206500473B87 /* ViewController.swift */; };
 		B078B4B11DC1206500473B87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B078B4AF1DC1206500473B87 /* Main.storyboard */; };
@@ -90,6 +91,7 @@
 		B0204C121DC945C3009703B2 /* ModalViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModalViewControllerDelegate.swift; path = Protocols/ModalViewControllerDelegate.swift; sourceTree = "<group>"; };
 		B0204C141DCADB09009703B2 /* ImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageHelper.swift; path = Helpers/ImageHelper.swift; sourceTree = "<group>"; };
 		B0204C161DCADB9C009703B2 /* ViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewHelper.swift; path = Helpers/ViewHelper.swift; sourceTree = "<group>"; };
+		B0204C181DCC03C0009703B2 /* VideoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoHelper.swift; path = Helpers/VideoHelper.swift; sourceTree = "<group>"; };
 		B078B4A81DC1206500473B87 /* proto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B078B4AB1DC1206500473B87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B078B4AD1DC1206500473B87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -387,6 +389,7 @@
 			children = (
 				B0204C141DCADB09009703B2 /* ImageHelper.swift */,
 				B0204C161DCADB9C009703B2 /* ViewHelper.swift */,
+				B0204C181DCC03C0009703B2 /* VideoHelper.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -740,6 +743,7 @@
 				B078B5541DC18B1400473B87 /* ImageCell.swift in Sources */,
 				B078B4E51DC1844000473B87 /* MKRingProgressGroupResultsView.swift in Sources */,
 				B0833DA11DC2F1E100BD9803 /* NLAppDelegate.swift in Sources */,
+				B0204C191DCC03C0009703B2 /* VideoHelper.swift in Sources */,
 				B0833DAE1DC2F1E100BD9803 /* NextLevelClip.swift in Sources */,
 				B078B4E71DC1845900473B87 /* MKRingProgressGroupVotingView.swift in Sources */,
 				B078B5511DC18B1400473B87 /* PhotoLibraryViewController.swift in Sources */,

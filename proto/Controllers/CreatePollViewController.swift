@@ -8,6 +8,7 @@
 
 import UIKit
 import Player
+import AVFoundation
 
 class CreatePollViewController: UIViewController, VideoCameraModalViewControllerDelegate, PlayerDelegate {
     var croppingEnabled: Bool = true
@@ -34,7 +35,8 @@ class CreatePollViewController: UIViewController, VideoCameraModalViewController
         ViewHelper.circleCrop(view: optionOneVideoView)
         
         if(self.optionOneVideoURL != nil) {
-            self.playVideo(videoURL: self.optionOneVideoURL!)
+            //self.playVideo(videoURL: self.optionOneVideoURL!)
+            self.optionOneImageView.image = VideoHelper.getVideoFirstFrame(videoURL: self.optionOneVideoURL!)
         }
     }
 
@@ -63,6 +65,8 @@ class CreatePollViewController: UIViewController, VideoCameraModalViewController
         tapGestureRecognizer.numberOfTapsRequired = 1
         self.player.view.addGestureRecognizer(tapGestureRecognizer)
     }
+    
+
     
     func playVideo(videoURL: URL) {
         print("now playing video", videoURL)
