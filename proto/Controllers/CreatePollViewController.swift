@@ -13,6 +13,9 @@ class CreatePollViewController: UIViewController, VideoCameraModalViewController
     var croppingEnabled: Bool = true
     var libraryEnabled: Bool = true
     private var player: Player!
+    public var optionOneVideoURL: URL?
+    public var optionTwoVideoUrl: URL?
+    
 
     @IBOutlet weak var pollFormatSegment: UISegmentedControl!
     @IBOutlet weak var optionOneImageView: UIImageView!
@@ -30,6 +33,9 @@ class CreatePollViewController: UIViewController, VideoCameraModalViewController
         ImageHelper.circleCrop(imageView: optionTwoImageView)
         ViewHelper.circleCrop(view: optionOneVideoView)
         
+        if(self.optionOneVideoURL != nil) {
+            self.playVideo(videoURL: self.optionOneVideoURL!)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,9 +54,9 @@ class CreatePollViewController: UIViewController, VideoCameraModalViewController
         self.view.autoresizingMask = ([UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight])
         self.player = Player()
         self.player.delegate = self
-        self.player.view.frame = self.view.bounds
+        self.player.view.frame = self.optionOneVideoView.bounds
         self.addChildViewController(self.player)
-        self.view.addSubview(self.player.view)
+        self.optionOneImageView.addSubview(self.player.view)
         self.player.didMove(toParentViewController: self)
         self.player.playbackLoops = false
         let tapGestureRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTapGestureRecognizer(_:)))
@@ -132,7 +138,9 @@ class CreatePollViewController: UIViewController, VideoCameraModalViewController
         else if(currentSegmentState() == "video") {
             let modalVC = VideoCameraViewController()
             modalVC.delegate = self
-            self.present(modalVC, animated: true, completion: nil)
+            // self.present(modalVC, animated: true, completion: nil)
+            performSegue(withIdentifier: "showVideoCamera", sender: self)
+
         }
 //        else if(currentSegmetState() == "voice" {
 //            

@@ -225,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				B0204C111DC945A5009703B2 /* Protocols */,
-				B078B56B1DC1B50B00473B87 /* Supporting Files */,
 				B078B5571DC198B600473B87 /* Helpers */,
 				B078B4D91DC182D500473B87 /* Libraries */,
 				B078B4EC1DC186FB00473B87 /* Models */,
@@ -397,13 +396,6 @@
 			children = (
 			);
 			name = VideoRecord;
-			sourceTree = "<group>";
-		};
-		B078B56B1DC1B50B00473B87 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		B0833D781DC2F1E100BD9803 /* NextLevel */ = {

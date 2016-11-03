@@ -31,7 +31,6 @@
                                         <state key="normal" title="Play"/>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="td5-09-hpH">
                                 <rect key="frame" x="46" y="51" width="282" height="277"/>
@@ -80,11 +79,41 @@
                         <outlet property="optionOneVideoView" destination="LkM-8j-LOI" id="fTo-l3-24A"/>
                         <outlet property="optionTwoImageView" destination="o4J-My-M7C" id="A67-Xh-nXj"/>
                         <outlet property="pollFormatSegment" destination="6zu-o5-Mac" id="nDM-8c-biQ"/>
+                        <segue destination="BM2-Al-9qp" kind="presentation" identifier="showVideoCamera" id="NGg-8p-W2A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nR7-pW-zn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3162.4000000000001" y="578.86056971514245"/>
+        </scene>
+        <!--Video Camera View Controller-->
+        <scene sceneID="NMj-GG-j4y">
+            <objects>
+                <viewController id="BM2-Al-9qp" customClass="VideoCameraViewController" customModule="proto" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qHp-2N-eZW"/>
+                        <viewControllerLayoutGuide type="bottom" id="mv3-l5-HWy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xnz-bh-jjp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yc4-8F-6w9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="Yc4-8F-6w9" id="ICU-Ir-kYS"/>
+                        <segue destination="LYv-Rt-BG0" kind="presentation" identifier="showCreatePoll" id="qhl-u5-1Yu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AyN-sq-asD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4021.5999999999999" y="578.86056971514245"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NAE-6z-JW9">
@@ -298,4 +327,7 @@
             <point key="canvasLocation" x="2212" y="251.42428785607197"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="qhl-u5-1Yu"/>
+    </inferredMetricsTieBreakers>
 </document>
