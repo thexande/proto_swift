@@ -37,6 +37,7 @@ class CreatePollViewController: UIViewController, VideoCameraModalViewController
         if(self.optionOneVideoURL != nil) {
             //self.playVideo(videoURL: self.optionOneVideoURL!)
             self.optionOneImageView.image = VideoHelper.getVideoFirstFrame(videoURL: self.optionOneVideoURL!)
+            
         }
     }
 
@@ -140,11 +141,13 @@ class CreatePollViewController: UIViewController, VideoCameraModalViewController
             present(cameraViewController, animated: true, completion: nil)
         }
         else if(currentSegmentState() == "video") {
-            let modalVC = VideoCameraViewController()
-            modalVC.delegate = self
-            // self.present(modalVC, animated: true, completion: nil)
-            performSegue(withIdentifier: "showVideoCamera", sender: self)
-
+            // have we recorded video yet?
+            if(self.optionOneVideoURL != nil) {
+                self.mainView.bringSubview(toFront: optionOneVideoView)
+                self.playVideo(videoURL: self.optionOneVideoURL!)
+            } else {
+                performSegue(withIdentifier: "showVideoCamera", sender: self)
+            }
         }
 //        else if(currentSegmetState() == "voice" {
 //            
