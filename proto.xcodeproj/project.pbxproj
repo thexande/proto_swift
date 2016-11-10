@@ -16,6 +16,7 @@
 		B0204C191DCC03C0009703B2 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0204C181DCC03C0009703B2 /* VideoHelper.swift */; };
 		B020F20D1DD2D81800E36ABC /* FirebaseVideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B020F20C1DD2D81800E36ABC /* FirebaseVideoHelper.swift */; };
 		B020F2131DD2D99300E36ABC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B020F2121DD2D99300E36ABC /* GoogleService-Info.plist */; };
+		B020F2171DD5284D00E36ABC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B020F2161DD5284D00E36ABC /* Podfile */; };
 		B078B4AC1DC1206500473B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B078B4AB1DC1206500473B87 /* AppDelegate.swift */; };
 		B078B4B11DC1206500473B87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B078B4AF1DC1206500473B87 /* Main.storyboard */; };
 		B078B4B31DC1206500473B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B078B4B21DC1206500473B87 /* Assets.xcassets */; };
@@ -95,6 +96,7 @@
 		B0204C181DCC03C0009703B2 /* VideoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoHelper.swift; path = Helpers/VideoHelper.swift; sourceTree = "<group>"; };
 		B020F20C1DD2D81800E36ABC /* FirebaseVideoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirebaseVideoHelper.swift; path = Helpers/Firebase/FirebaseVideoHelper.swift; sourceTree = "<group>"; };
 		B020F2121DD2D99300E36ABC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Configuration/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B020F2161DD5284D00E36ABC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		B078B4A81DC1206500473B87 /* proto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B078B4AB1DC1206500473B87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B078B4B01DC1206500473B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 			children = (
 				B078B4B71DC1206500473B87 /* Info.plist */,
 				B020F2121DD2D99300E36ABC /* GoogleService-Info.plist */,
+				B020F2161DD5284D00E36ABC /* Podfile */,
 			);
 			name = Configuration;
 			sourceTree = "<group>";
@@ -622,6 +625,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B020F2171DD5284D00E36ABC /* Podfile in Resources */,
 				B078B5421DC18B1400473B87 /* CameraViewAssets.xcassets in Resources */,
 				B078B4B61DC1206500473B87 /* LaunchScreen.storyboard in Resources */,
 				B020F2131DD2D99300E36ABC /* GoogleService-Info.plist in Resources */,

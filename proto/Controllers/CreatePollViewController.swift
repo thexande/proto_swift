@@ -17,17 +17,23 @@ class CreatePollViewController: UIViewController, VideoCameraModalViewController
     public var optionOneVideoURL: URL?
     public var optionTwoVideoUrl: URL?
     
+    var Player1: Player = Player()
+    var Player2: Player = Player()
 
+    var optionNumber: Int?
+    
     @IBOutlet weak var pollFormatSegment: UISegmentedControl!
     @IBOutlet weak var optionOneImageView: UIImageView!
     @IBOutlet weak var optionTwoImageView: UIImageView!
     @IBOutlet weak var optionOneVideoView: UIView!
+    @IBOutlet weak var optionTwoVideoView: UIView!
     @IBOutlet var mainView: UIView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.configureVideoPlayer()
+        self.configureVideoPlayer(videoView: optionOneVideoView, playerInstance: Player1)
+        self.configureVideoPlayer(videoView: optionTwoVideoView, playerInstance: Player2)
 
         // crop circles
         ImageHelper.circleCrop(imageView: optionOneImageView)
@@ -50,26 +56,31 @@ class CreatePollViewController: UIViewController, VideoCameraModalViewController
     internal func sendValue(value: URL) {
         mainView.bringSubview(toFront: optionOneVideoView)
         print("in main view controller", value)
-        self.playVideo(videoURL: value)
+        
+        if (optionNumber == 1) {
+            self.playVideo(videoURL: value, videoView: optionOneVideoView)
+        } else {
+            print("option two selected")
+        }
+        self.playVideo(videoURL: value, videoView: optionTwoVideoView)
     }
     
-    func configureVideoPlayer() {
+    func configureVideoPlayer(videoView: UIView, playerInstance: Player) {
         self.view.autoresizingMask = ([UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight])
-        self.player = Player()
-        self.player.delegate = self
-        self.player.view.frame = self.optionOneVideoView.bounds
-        self.addChildViewController(self.player)
-        self.optionOneImageView.addSubview(self.player.view)
-        self.player.didMove(toParentViewController: self)
-        self.player.playbackLoops = false
+        playerInstance.delegate = self
+        playerInstance.view.frame = videoView.bounds
+        self.addChildViewController(playerInstance)
+        videoView.addSubview(playerInstance.view)
+        playerInstance.didMove(toParentViewController: self)
+        playerInstance.playbackLoops = false
         let tapGestureRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTapGestureRecognizer(_:)))
         tapGestureRecognizer.numberOfTapsRequired = 1
-        self.player.view.addGestureRecognizer(tapGestureRecognizer)
+        playerInstance.view.addGestureRecognizer(tapGestureRecognizer)
     }
     
 
     
-    func playVideo(videoURL: URL) {
+    func playVideo(videoURL: URL, videoView: UIView) {
         print("now playing video", videoURL)
         self.player.setUrl(videoURL)
         self.player.playFromBeginning()
@@ -143,8 +154,9 @@ class CreatePollViewController: UIViewController, VideoCameraModalViewController
         else if(currentSegmentState() == "video") {
             // have we recorded video yet?
             if(self.optionOneVideoURL != nil) {
+                optionNumber = 1
                 self.mainView.bringSubview(toFront: optionOneVideoView)
-                self.playVideo(videoURL: self.optionOneVideoURL!)
+                self.playVideo(videoURL: self.optionOneVideoURL!, videoView: self.optionOneVideoView)
             } else {
                 performSegue(withIdentifier: "showVideoCamera", sender: self)
             }

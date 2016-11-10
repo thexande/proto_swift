@@ -12,7 +12,6 @@ import UIKit
 
 
 class VideoHelper {
-    
     static func getVideoFirstFrame(videoURL: URL) -> (UIImage)? {
         do {
             let asset = AVURLAsset(url: videoURL, options: nil)
